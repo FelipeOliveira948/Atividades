@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 1 a 35</title>
+</head>
+
+<script>
+    var salario = parseFloat(prompt('Digite seu salário: '))
+    document.write("<h1>" + "Execução dos Exercícios" + "</h1>" + "<br/>")
+    if(salario < 2000 ){
+        bonus1 = salario * 0.05
+        total1 = salario + bonus1
+        document.write(total1.toFixed(2) + ' seu salário recebeu um bônus de 5%')
+    }else if(salario >= 2000){
+        bonus2 = salario * 0.10
+        total2 = salario + bonus2
+        document.write(total2.toFixed(2) + ' seu salário recebeu um bônus de 10%')
+    }
+    
+</script>
+
+<body>
+</body>
+</html>

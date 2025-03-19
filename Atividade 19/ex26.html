@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 1 a 35</title>
+</head>
+
+<script>
+    var codigo= parseInt(prompt('Digite o código de(0 a 100): '))
+    var qtd= parseInt(prompt('Digite a quantidade deste produto: '))
+    document.write("<h1>" + "Execução dos Exercícios" + "</h1>" + "<br/>")
+    if(codigo <= 25){
+        valor1 = 25.50 * qtd
+        document.write('O valor a ser pago deste produto é: ' + valor1.toFixed(2))
+    }else if(codigo <= 50) {
+        valor2 = 49.50 * qtd
+        document.write('O valor a ser pago deste produto é: ' + valor2.toFixed(2))
+    }else if(codigo <= 75) {
+        valor3 = 69.50 * qtd
+        document.write('O valor a ser pago deste produto é: ' + valor3.toFixed(2))
+    } else if(codigo <= 100) {
+        valor4 = 98.50 * qtd
+        document.write('O valor a ser pago deste produto é: ' + valor4.toFixed(2))
+    }
+</script>
+
+<body>
+</body>
+</html>

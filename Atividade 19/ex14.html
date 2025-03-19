@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 1 a 35</title>
+</head>
+
+<script>
+    var numero1 = parseInt(prompt('Digite sua idade: '))
+    var mes = numero1 * 12
+    var dias = (mes * 31)
+    var cont = mes / 12
+
+    if(mes >= 12){
+        dias -= cont * 7
+    }
+    
+    document.write("<h1>" + "Execução dos Exercícios" + "</h1>" + "<br/>")
+    document.write('Sua idade em anos: ' + numero1 + '</br>')
+    document.write('Sua idade em mês: ' + mes + '</br>')
+    document.write('Sua idade em dias: ' + dias + '</br>')
+
+    
+</script>
+
+<body>
+</body>
+</html>
