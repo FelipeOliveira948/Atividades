@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel - Início</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="#">
+                    Início
+                </a>
+            </li>
+ 
+            <li>
+                <a href="diarias.html" target="_blank">
+                    Reservas
+                </a>
+            </li>
+ 
+            <li>
+                <a href="cadastro.html">
+                    Cadastro
+                </a>
+            </li>
+ 
+            <li>
+                <a href="eventos.html">
+                    Eventos
+                </a>
+            </li>
+ 
+            <li>
+                <a href="buffet.html">
+                    Buffet
+                </a>
+            </li>
+ 
+            <li>
+                <a href="auditorio.html">
+                    Auditório  
+                </a>
+            </li>
+ 
+            <li>
+                <a href="postos.html">
+                    Postos  
+                </a>
+            </li>
+ 
+            <li>
+                <a href="manutencao.html">
+                    Manutenção    
+                </a>
+            </li>
+        </ul>
+    </nav>
+ 
+ 
+    <script>
+        let nomeDoHotel = prompt('Qual o nome do hotel?')
+        let nomeDoUsuario = prompt('Qual o nome do usuário?')
+        let senhaDoUsuario = Number(prompt('Qual a senha do usuário?'))
+
+        alert('O nome do hotel é: ' + nomeDoHotel)
+
+        if (senhaDoUsuario != 2678){
+            alert('Senha incorreta')
+        }else{
+            alert('Bem vindo, ao hotel ' + nomeDoHotel + ' , ' + nomeDoUsuario)
+        }
+
+    </script>
+</body>
+</html>

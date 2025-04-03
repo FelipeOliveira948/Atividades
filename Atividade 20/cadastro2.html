@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE CADASTRO</h1>
+    </br>
+    </br>
+    <li>
+        <a href="hotel.html">
+            Voltar para o Início
+        </a>
+    </li>
+
+    <script>
+        var info = parseInt(prompt('Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+        var lista_nome = []
+
+        while(info > 3 || info < 0){
+            info = parseInt(prompt(' Valor incorreto, digite essa sentença: Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+        }
+        while(info < 3 && info >= 1){
+            if(info == 1){
+                nome = prompt('Qual o nome do Hóspede?')
+                lista_nome.push(nome)
+                alert("Hóspede " + nome + " foi cadastrada(o) com sucesso!")
+                info = parseInt(prompt('Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+                while(info > 3 || info < 0){
+                info = parseInt(prompt(' Valor incorreto, digite essa sentença: Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+                }
+                continue
+            }
+            if(info == 2){
+                nome = prompt('Qual o nome do Hóspede?')
+                const seletor = lista_nome.find((nome) => {
+                    return nome === nome 
+                });
+                
+                if(seletor == nome){
+                    alert('Hóspede ' + nome +  ' foi encontrada(o)!')
+                }else{
+                    alert('Hóspede ' + nome +  ' não foi encontrada(o)!')
+                }
+                info = parseInt(prompt('Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+                while(info > 3 || info < 0){
+                info = parseInt(prompt(' Valor incorreto, digite essa sentença: Selecione uma opção: 1. Cadastrar - 2. Pesquisar - 3. Sair'))
+                }
+                continue
+            }
+            if(info == 3){
+                break
+            }
+            
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+<body>
+    <h1>PREÇOS DAS DIARIAS</h1>
+    </br>
+    </br>
+    <li>
+        <a href="hotel.html">
+            Voltar para o Início
+        </a>
+    </li>
+
+    <section>
+        <ul>
+            <li>
+                <a href="#">Básico | Preço (diaria): R$55,50</a>
+            </li>
+            <li>
+                <a href="#">Premium | Preço (diaria): R$100,00</a>
+            </li>
+            <li>
+                <a href="#">Luxo | Preço (diaria): R$150,00</a>
+            </li>
+        </ul>
+    </section>
+    <script>
+        const basico = 55.50
+        const premium = 100.00
+        const luxo = 150.00
+        let diaria = prompt('Escolha o quarto desejado')
+        let quantidade = parseInt(prompt('Quantos dias ficará hospedado?'))
+        let total
+        if(quantidade > 30){
+            alert(' A quantidade de dias permitido foi ultrapassado! Reinicie a página e digite novamente!')
+        }else {
+            alert(' Você ficara hospedado'+ quantidade + ' dias, no quarto ' + diaria)
+        }
+        switch(diaria){
+            case 'basico':
+                total = basico*quantidade
+                alert(' O valor total da sua estádia será: ' + total)
+                break
+                
+            case 'premium':
+                total = premium*quantidade
+                alert(' O valor total da sua estádia será: ' + total)
+
+            case 'luxo':
+                total = luxo*quantidade
+                alert(' O valor total da sua estádia será: ' + total)
+                break
+                default:alert(' Opção Inválida')
+
+        }
+
+        let usuario = prompt(' Qual o nome do hóspede?')
+        let confirm = prompt(usuario + ' você confirma a hospedagem para Carlos Moreira por 10 dias? S/N')
+        if (confirm == S){
+            alert(usuario + ', reserva efetuada para Carlos Moreira. O valor total é de 550.0.')
+        }else if(confirm == N){
+            alert(usuario + ', reserva não efetuada')
+        }else{
+            alert(' Informação inválida, refaça o questionário ')
+        }
+    </script>
+</body>
+</html>

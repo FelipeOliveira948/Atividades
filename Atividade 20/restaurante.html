@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE Reserva</h1>
+</br>
+</br>
+<li>
+    <a href="hotel.html">
+        Voltar para o Início
+    </a>
+</li>
+    <script>
+        var dia = prompt( "Qual o dia do seu evento?" 
+        )
+        var hora = parseInt(prompt("Qual a hora do seu evento?" ))
+        var contador = 0
+        while(contador == 0){
+            if(dia != 'sabado' && dia != 'domingo'){
+            if(hora < 7 || hora > 23){
+                alert("Restaurante indisponível")
+                break
+            } else{
+                empresa = prompt( "Qual o nome da empresa?")
+                alert('Restaurante reservado para ' + empresa + ' ' + dia +  ' às ' + hora + 'hs')
+                break
+            }
+        }
+            if(dia == 'sabado' || dia == 'domingo'){
+                if(hora < 7 || hora > 15){
+                alert("Restaurante indisponível")
+                break
+            } else{
+                empresa = prompt( "Qual o nome da empresa?")
+                alert('Restaurante reservado para ' + empresa + ' ' + dia +  ' às ' + hora + 'hs')
+                break
+            }
+            }
+            contador += 1
+        }
+
+
+
+
+    </script>
+</body>
+</html>

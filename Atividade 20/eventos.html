@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE EVENTOS</h1>
+</br>
+</br>
+<li>
+    <a href="hotel.html">
+        Voltar para o Início
+    </a>
+</li>
+    <script>
+        var custo = 10.50
+        var hora = parseInt(prompt("Qual a duração do evento em horas?"))
+        var garcom = parseInt(prompt("Quantos garçons serão necessários?"))
+        alert('Custo total: R$ ' + ((hora * custo)*garcom).toFixed(2) )
+        var pergunta = prompt("Gostaria de efetuar a reserva? S/N")
+        if (pergunta == 'S'){
+            alert( 'Reserva efetuada com sucesso.')
+        }else{
+            alert("Reserva não efetuada.")
+        }
+
+
+
+    </script>
+</body>
+</html>
