@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 média entre valores</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt('Digite um número: ')) 
+        var num2 = parseInt(prompt('Digite outro número só maior que o anterior: '))
+        var acumula = 0
+        var contador = 0
+
+        while( num1 <= num2 ){
+            acumula += num1
+            num1 += 1
+            contador += 1
+        } 
+        document.write('A media aritmética é: ' + acumula / contador)
+
+        
+
+    </script>
+</body>
+</html>
