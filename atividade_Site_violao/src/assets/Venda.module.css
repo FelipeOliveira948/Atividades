@@ -1,0 +1,32 @@
+#vendas{
+    position: relative;
+    background-color: rgb(219, 236, 247);
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.produto{
+    position: relative;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.guitarrinha{
+    width: 250px;
+    height: 200px;
+}
+
+
+.preco{
+    position: relative;
+    color: red;
+    background-color: white;
+    text-align: center;
+}

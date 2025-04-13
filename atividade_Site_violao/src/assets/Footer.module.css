@@ -1,0 +1,31 @@
+footer{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rua{
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+.rua::first-line{
+    font-weight: bold;
+}
+
+#icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon4{
+    width: 30px;
+    height: 30px;
+    padding-right: 30px;
+}
